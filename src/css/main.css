@@ -2,16 +2,23 @@ body {
   background-color: whitesmoke;
 }
 
+.welcomeimg img {
+  background-color: #f54343;
+}
+
 h1 {
   color: #f54343;
 }
 
+form {
+  background-color: rgba(255, 255, 255, 0.624);
+}
 form input {
   border-color: #f54343;
   accent-color: #f54343;
   border: none;
   border-bottom: 2px solid #f54343;
-  background-color: whitesmoke;
+  background-color: rgba(255, 0, 0, 0);
 }
 form input[type=text]:focus {
   outline: none;
@@ -58,18 +65,50 @@ main .message {
   margin-top: 2%;
 }
 
+.backgroundimg {
+  position: absolute;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  z-index: -1;
+  width: 100wh;
+  height: 100vh;
+}
+.backgroundimg img {
+  width: 100%;
+}
+
+.welcomeimg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.welcomeimg img {
+  margin-top: 2%;
+  margin-bottom: -4%;
+  border-radius: 50%;
+  height: 150px;
+  border: solid 5px #f54343;
+}
+
 h1 {
   text-align: center;
-  margin: 5% 0 2%;
+  margin: 1% 0 2%;
 }
 
 form {
-  margin: 0 35%;
+  margin: 0 32%;
+  padding: 5%;
   display: flex;
   flex-direction: column;
 }
 form label {
   margin-bottom: 3%;
+}
+form label .iconimg {
+  width: 32px;
+  height: 32px;
+  margin-right: 3%;
 }
 form input {
   margin: 1%;
@@ -86,7 +125,7 @@ form input[type=radio] {
 }
 form p {
   text-align: center;
-  margin-top: 15%;
+  margin-top: 5%;
 }
 form div {
   width: 100%;
@@ -96,8 +135,10 @@ form div label {
   width: 100%;
   display: flex;
   justify-content: center;
+  vertical-align: middle;
 }
 form input[type=submit] {
   height: 36px;
   border-radius: 25px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,9 @@
 document.getElementById("root").innerHTML = `
-<h1>Welcome</h1>
+
+<div class="backgroundimg"><img src="./img/jpg1.jpg"></div>
+<div class="welcomeimg"><img src="./img/png2.png"></div>
 <form id="form">
+<h1>Welcome</h1>
 <label for="user-name-input">What's your name?
 <input type="text" id="user-name-input" name="user-name-input" required/>
 </label>
@@ -8,10 +11,10 @@ document.getElementById("root").innerHTML = `
 <input type="text" id="user-email-input" name="user-email-input" required/>
 </label>
 <div>
-<label for="user-rol-input">I'm a teacher
+<label for="user-rol-input"><img class="iconimg" src="./img/png1.png">I'm a teacher
 <input type="radio" name="user-rol-input" value="teacher" required/>
 </label>
-<label for="user-rol-input">I'm a student
+<label for="user-rol-input"><img class="iconimg" src="./img/svg1.svg">I'm a student
 <input type="radio" name="user-rol-input" value="student" required/>
 </label>
 </div>
@@ -30,12 +33,12 @@ document.getElementById("root").innerHTML = `
 <input type="submit" id="send-btn" value="Send"/>
 </form>
 <div id="message" class="message"></div>
-<div id="images" class="images">
+<!--<div id="images" class="images">
 <div class="imgflex"><p>jpg1</p><img src="./img/jpg1.jpg"></div>
 <div class="imgflex"><p>png1</p><img src="./img/png1.png"></div>
 <div class="imgflex"><p>png2</p><img src="./img/png2.png"></div>
 <div class="imgflex"><p>svg1</p><img src="./img/svg1.svg"></div>
-</div>
+</div>-->
 `
 
 const SENDBTN = document.getElementById('send-btn')
