@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <script type="module" src="./main.js"></script> -->
+  <script src="./module-a.js" defer async></script>
+</head>
+<body>
+  <main>
+    <h1>Welcome</h1>
+    <form id="form">
+      <label for="user-name-input">What's your name?</label>
+      <input type="text" id="user-name-input" name="user-name-input" required/>
+      <label for="user-email-input">What's your email?</label>
+      <input type="text" id="user-email-input" name="user-email-input" required/>
+      <label for="user-rol-input">I'm a teacher</label>
+      <input type="radio" name="user-rol-input" value="teacher" required/>
+      <label for="user-rol-input">I'm a student</label>
+      <input type="radio" name="user-rol-input" value="student" required/>
+      <p>What do you want to teach/learn?</p>
+      <label for="checkbox-javascript">Javascript</label>
+      <input type="checkbox" name="checkbox-javascript" value="javascript">
+      <label for="checkbox-sass">Sass</label>
+      <input type="checkbox" name="checkbox-sass" value="sass">
+      <label for="checkbox-react">React</label>
+      <input type="checkbox" name="checkbox-react" value="react">
+      <input type="submit" id="send-btn" value="Send"/>
+    </form>
+    <div id="message"></div>
+  </main>
+</body>
+</html>

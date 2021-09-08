@@ -1,0 +1,25 @@
+{
+  "name": "webpack-basics-own",
+  "version": "1.0.0",
+  "description": "`#html` `#css` `#sass` `#javascript` `#webpack` `#es6` `#master-in-software-engineering`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosVelilla/webpack-basics---dev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlosVelilla/webpack-basics---dev/issues"
+  },
+  "homepage": "https://github.com/CarlosVelilla/webpack-basics---dev#readme",
+  "dependencies": {
+    "webpack-cli": "^4.8.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.52.0"
+  }
+}
