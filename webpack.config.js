@@ -1,7 +1,9 @@
-const PATH = require("path")
-const HTMLWEBPACKPLUGIN = require("html-webpack-plugin");
-const WEBPACK = require("webpack")
+const path = require("path")
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack")
 
+
+/** @type {import('webpack'.Configuration)} */
 module.exports = {
   mode: "development",
   devServer: {
@@ -12,16 +14,38 @@ module.exports = {
     hot: true
   },
   entry: {
-    main: PATH.resolve(__dirname, "./src/main.js")
+    index: path.resolve(__dirname, "./src/index.js")
   },
   output: {
-    path: PATH.resolve(__dirname, "./dist"),
+    path: path.resolve(__dirname, "./dist"),
     filename: "[name].bundle.js"
   },
+  module: {
+    rules: [
+      {
+        use: ["babel-loader"],
+        test: /\.js$/,
+        exclude: /node_modules/
+      },
+      {
+        use: ["style-loader", "css-loader", "sass-loader"],
+        test: /\.(css|scss|sass)$/,
+      },
+      {
+        type: "asset",
+        test: /\.(png|jpg|svg)$/
+      },
+    ],
+  },
   plugins: [
-    new WEBPACK.ProvidePlugin({
+    new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery"
-    })
+    }),
+    new HtmlWebPackPlugin({
+      template: path.resolve(__dirname, "./src/index.html"),
+      filename: "index.html"
+    }),
+    new webpack.HotModuleReplacementPlugin(),
   ]
 }

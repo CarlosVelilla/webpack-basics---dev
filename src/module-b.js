@@ -1,4 +1,4 @@
 import $ from "../node_modules/jquery";
 
-let pepito = $("pepito").html( "Next Step..." );
+let pepito = $("root").html( "Next Step..." );
 console.log(pepito);

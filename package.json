@@ -4,7 +4,7 @@
   "description": "`#html` `#css` `#sass` `#javascript` `#webpack` `#es6` `#master-in-software-engineering`",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -17,16 +17,22 @@
   },
   "homepage": "https://github.com/CarlosVelilla/webpack-basics---dev#readme",
   "dependencies": {
-    "jquery": "^3.6.0",
-    "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.1.1"
+    "core-js": "^3.17.2",
+    "jquery": "^3.6.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.15.4",
+    "babel-loader": "^8.2.2",
     "css-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
     "sass": "^1.39.0",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
-    "webpack": "^5.52.0"
-  }
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev": "^1.1.1"
+  },
+  "browserslist": "> 0.25%, not dead, not ie 11"
 }
