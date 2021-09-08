@@ -1,0 +1,30 @@
+$backgroundrgb: rgb(245, 245, 245);
+$headerrgb: #f54343;
+$buttonrgb: #f54343;
+$buttontxtrgb: white;
+
+
+body {
+    background-color: $backgroundrgb;
+}
+
+h1 {
+    color: $headerrgb;
+}
+
+form {
+    input{
+        border-color: $buttonrgb;
+        accent-color: $buttonrgb;
+        border: none;
+        border-bottom: 2px solid $buttonrgb;
+        background-color: $backgroundrgb;
+    }
+    input[type=text]:focus{
+        outline: none;
+    }
+    #send-btn {
+        background-color: $buttonrgb;
+        color: $buttontxtrgb;
+    }
+}
